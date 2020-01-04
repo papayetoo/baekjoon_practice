@@ -32,13 +32,17 @@ int main(){
     
     for(int i = 0; i < n; i++){
         int same = 0, bigger = 0, lower = 0;
-        for(int j = (i + 1) % n; j % n != i; j++){
+        int j = (i + 1) % n;
+        while(j% n != i){
             if(arr[i].weight < arr[j].weight && arr[i].height < arr[j].height)
                 bigger++;
             else if(arr[i].weight > arr[j].weight && arr[i].height > arr[j].height)
                 lower++;
+            else
+                same++;
+            j = (j + 1) % n;
         }
-        cout << lower << same << bigger << endl;
+        cout << n - lower - same << " ";
     }
     
     return 0;
