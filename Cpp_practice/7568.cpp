@@ -30,7 +30,8 @@ int main(){
         cin >> arr[i].weight >> arr[i].height;
     }
     
-    cout << "Test \n";
+    cout << "Test 2 \n";
+    cout << "what's the difference between commit and push?\n";
     
     for(int i = 0; i < n; i++){
         int same = 0, bigger = 0, lower = 0;
