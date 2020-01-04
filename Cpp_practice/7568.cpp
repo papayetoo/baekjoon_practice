@@ -30,6 +30,8 @@ int main(){
         cin >> arr[i].weight >> arr[i].height;
     }
     
+    cout << "Test \n";
+    
     for(int i = 0; i < n; i++){
         int same = 0, bigger = 0, lower = 0;
         int j = (i + 1) % n;
